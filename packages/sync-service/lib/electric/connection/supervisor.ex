@@ -97,7 +97,7 @@ defmodule Electric.Connection.Supervisor do
       Electric.StackSupervisor.dispatch_stack_event(
         opts[:stack_events_registry],
         stack_id,
-        :ready
+        :stack_is_running
       )
 
       {:ok, pid}
